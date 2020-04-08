@@ -10,6 +10,8 @@
 		E84771A8243DD3C100374F2B /* SCXPromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E847719E243DD3C100374F2B /* SCXPromiseKit.framework */; };
 		E84771AD243DD3C100374F2B /* SCXPromiseKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84771AC243DD3C100374F2B /* SCXPromiseKitTests.m */; };
 		E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E84771A1243DD3C100374F2B /* SCXPromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E84771BD243DD6BB00374F2B /* SCXPromise.h */; };
+		E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E84771BE243DD6BB00374F2B /* SCXPromise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		E84771A7243DD3C100374F2B /* SCXPromiseKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCXPromiseKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84771AC243DD3C100374F2B /* SCXPromiseKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseKitTests.m; sourceTree = "<group>"; };
 		E84771AE243DD3C100374F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84771BD243DD6BB00374F2B /* SCXPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXPromise.h; sourceTree = "<group>"; };
+		E84771BE243DD6BB00374F2B /* SCXPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromise.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E84771A1243DD3C100374F2B /* SCXPromiseKit.h */,
+				E84771BD243DD6BB00374F2B /* SCXPromise.h */,
+				E84771BE243DD6BB00374F2B /* SCXPromise.m */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKit;
@@ -94,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
+				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
