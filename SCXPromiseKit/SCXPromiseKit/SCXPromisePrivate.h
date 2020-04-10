@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface SCXPromise<Value>()
 
+
 typedef id __nullable (^ __nullable SCXPromiseChainedFulfillBlock)(Value __nullable value);
 typedef id __nullable (^__nullable SCXPromiseChainedRejectBlock)(NSError *error);
 typedef void (^SCXPromiseOnFulfillBlock)(Value __nullable value) ;
@@ -22,6 +23,8 @@ chainedFulfill:(SCXPromiseChainedFulfillBlock)chainedFulfill
 - (void)observOnQueue:(dispatch_queue_t)queue
 fullFill:(SCXPromiseOnFulfillBlock)onFullFill
                reject:(SCXPromiseOnRejectBlock)onReject;
+BOOL SCXWaitForPromisesWithTimeout(NSTimeInterval timeout);
 @end
+
 
 NS_ASSUME_NONNULL_END

@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8297C9924406D5C00CE2985 /* SCXPromise+Then.h in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57D24401C70009A52FF /* SCXPromise+Then.h */; };
+		E8297C9A24406D5E00CE2985 /* SCXPromise+Async.h in Sources */ = {isa = PBXBuildFile; fileRef = E8774B1B2440221E009326B2 /* SCXPromise+Async.h */; };
+		E8297C9B24406EB100CE2985 /* SCXPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57E24401C70009A52FF /* SCXPromise+Then.m */; };
+		E8297C9C24406EB200CE2985 /* SCXPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = E8774B1C2440221E009326B2 /* SCXPromise+Async.m */; };
+		E8297C9F2440784900CE2985 /* SCXTestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8297C9D2440784900CE2985 /* SCXTestHelper.h */; };
+		E8297CA1244078CD00CE2985 /* SCXTestHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = E8297C9D2440784900CE2985 /* SCXTestHelper.h */; };
 		E84771A8243DD3C100374F2B /* SCXPromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E847719E243DD3C100374F2B /* SCXPromiseKit.framework */; };
 		E84771AD243DD3C100374F2B /* SCXPromiseKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84771AC243DD3C100374F2B /* SCXPromiseKitTests.m */; };
 		E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E84771A1243DD3C100374F2B /* SCXPromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E84771BD243DD6BB00374F2B /* SCXPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E84771BE243DD6BB00374F2B /* SCXPromise.m */; };
-		E89C54FB243EC9FF009C09FB /* SCXPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */; };
+		E8774B1A24402107009326B2 /* SCXPromiseThenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8774B1924402107009326B2 /* SCXPromiseThenTest.m */; };
+		E8774B1D2440221E009326B2 /* SCXPromise+Async.h in Headers */ = {isa = PBXBuildFile; fileRef = E8774B1B2440221E009326B2 /* SCXPromise+Async.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8774B1E2440221E009326B2 /* SCXPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = E8774B1C2440221E009326B2 /* SCXPromise+Async.m */; };
+		E89C54FB243EC9FF009C09FB /* SCXPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B9D57C24401356009A52FF /* SCXPromiseKit.h in Sources */ = {isa = PBXBuildFile; fileRef = E84771A1243DD3C100374F2B /* SCXPromiseKit.h */; };
+		E8B9D57F24401C70009A52FF /* SCXPromise+Then.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B9D57D24401C70009A52FF /* SCXPromise+Then.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B9D58024401C70009A52FF /* SCXPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57E24401C70009A52FF /* SCXPromise+Then.m */; };
 		E8CED774243EFC32009178E8 /* SCXPromise.h in Sources */ = {isa = PBXBuildFile; fileRef = E84771BD243DD6BB00374F2B /* SCXPromise.h */; };
 		E8CED775243F08FA009178E8 /* SCXPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E84771BE243DD6BB00374F2B /* SCXPromise.m */; };
 		E8CED776243F08FC009178E8 /* SCXPromisePrivate.h in Sources */ = {isa = PBXBuildFile; fileRef = E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */; };
@@ -29,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8297C9D2440784900CE2985 /* SCXTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXTestHelper.h; sourceTree = "<group>"; };
 		E847719E243DD3C100374F2B /* SCXPromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCXPromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84771A1243DD3C100374F2B /* SCXPromiseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXPromiseKit.h; sourceTree = "<group>"; };
 		E84771A2243DD3C100374F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +50,12 @@
 		E84771AE243DD3C100374F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84771BD243DD6BB00374F2B /* SCXPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXPromise.h; sourceTree = "<group>"; };
 		E84771BE243DD6BB00374F2B /* SCXPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromise.m; sourceTree = "<group>"; };
+		E8774B1924402107009326B2 /* SCXPromiseThenTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseThenTest.m; sourceTree = "<group>"; };
+		E8774B1B2440221E009326B2 /* SCXPromise+Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Async.h"; sourceTree = "<group>"; };
+		E8774B1C2440221E009326B2 /* SCXPromise+Async.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Async.m"; sourceTree = "<group>"; };
 		E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXPromisePrivate.h; sourceTree = "<group>"; };
+		E8B9D57D24401C70009A52FF /* SCXPromise+Then.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Then.h"; sourceTree = "<group>"; };
+		E8B9D57E24401C70009A52FF /* SCXPromise+Then.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Then.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +99,14 @@
 			isa = PBXGroup;
 			children = (
 				E84771A1243DD3C100374F2B /* SCXPromiseKit.h */,
+				E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */,
 				E84771BD243DD6BB00374F2B /* SCXPromise.h */,
 				E84771BE243DD6BB00374F2B /* SCXPromise.m */,
-				E89C54F9243EC9FF009C09FB /* SCXPromisePrivate.h */,
+				E8B9D57D24401C70009A52FF /* SCXPromise+Then.h */,
+				E8B9D57E24401C70009A52FF /* SCXPromise+Then.m */,
+				E8774B1B2440221E009326B2 /* SCXPromise+Async.h */,
+				E8774B1C2440221E009326B2 /* SCXPromise+Async.m */,
+				E8297C9D2440784900CE2985 /* SCXTestHelper.h */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKit;
@@ -93,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E84771AC243DD3C100374F2B /* SCXPromiseKitTests.m */,
+				E8774B1924402107009326B2 /* SCXPromiseThenTest.m */,
 				E84771AE243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKitTests;
@@ -107,7 +131,10 @@
 			files = (
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
 				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
+				E8774B1D2440221E009326B2 /* SCXPromise+Async.h in Headers */,
+				E8297C9F2440784900CE2985 /* SCXTestHelper.h in Headers */,
 				E89C54FB243EC9FF009C09FB /* SCXPromisePrivate.h in Headers */,
+				E8B9D57F24401C70009A52FF /* SCXPromise+Then.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
+				E8774B1E2440221E009326B2 /* SCXPromise+Async.m in Sources */,
+				E8B9D58024401C70009A52FF /* SCXPromise+Then.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +246,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84771AD243DD3C100374F2B /* SCXPromiseKitTests.m in Sources */,
+				E8774B1A24402107009326B2 /* SCXPromiseThenTest.m in Sources */,
+				E8B9D57C24401356009A52FF /* SCXPromiseKit.h in Sources */,
+				E8297C9A24406D5E00CE2985 /* SCXPromise+Async.h in Sources */,
 				E8CED776243F08FC009178E8 /* SCXPromisePrivate.h in Sources */,
+				E8297C9924406D5C00CE2985 /* SCXPromise+Then.h in Sources */,
+				E8297CA1244078CD00CE2985 /* SCXTestHelper.h in Sources */,
+				E8297C9C24406EB200CE2985 /* SCXPromise+Async.m in Sources */,
 				E8CED774243EFC32009178E8 /* SCXPromise.h in Sources */,
+				E8297C9B24406EB100CE2985 /* SCXPromise+Then.m in Sources */,
 				E8CED775243F08FA009178E8 /* SCXPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
