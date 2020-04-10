@@ -9,8 +9,28 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef NS_ENUM(NSInteger, SCXPromiseState) {
+  SCXPromiseStatePending = 0,
+  SCXPromiseStateFulfilled,
+  SCXPromiseStateRejected,
+};
 @interface SCXPromise<Value> : NSObject
+
+/**
+ value
+ */
+@property(nonatomic , strong , readonly)id value;
+
+/**
+ state
+ */
+@property(nonatomic , assign , readonly)SCXPromiseState state;
+
+/**
+ error
+ */
+@property(nonatomic , strong , readonly)NSError *error;
+
 
 /**
  default dispatch queue
