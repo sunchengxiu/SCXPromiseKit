@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "SCXPromise+Then.h"
+#import "SCXPromise+ThenSync.h"
 #import "SCXPromise+Async.h"
 #import "SCXPromisePrivate.h"
 #import "SCXTestHelper.h"

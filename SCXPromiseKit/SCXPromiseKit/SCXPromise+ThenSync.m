@@ -6,7 +6,7 @@
 //  Copyright © 2020 RongCloud. All rights reserved.
 //
 
-#import "SCXPromise+Then.h"
+#import "SCXPromise+ThenSync.h"
 #import "SCXPromisePrivate.h"
 @implementation SCXPromise (Then)
 -(SCXPromise *)then:(SCXPromiseThenWorkBlock)then{
