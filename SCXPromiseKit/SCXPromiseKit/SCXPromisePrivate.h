@@ -16,10 +16,17 @@ typedef id __nullable (^ __nullable SCXPromiseChainedFulfillBlock)(Value __nulla
 typedef id __nullable (^__nullable SCXPromiseChainedRejectBlock)(NSError *error);
 typedef void (^SCXPromiseOnFulfillBlock)(Value __nullable value) ;
 typedef void (^SCXPromiseOnRejectBlock)(NSError *error);
+typedef void (^SCXPromiseAsyncFullFillBlock)(id __nullable asyncValue);
+typedef void (^SCXPromiseWorkBlock)(Value __nullable value ,SCXPromiseAsyncFullFillBlock fullFillBlock);
+
+
 + (dispatch_group_t)dispatchGroup;
 - (SCXPromise *) chainOnQueue:(dispatch_queue_t)queue
 chainedFulfill:(SCXPromiseChainedFulfillBlock)chainedFulfill
                 chainedReject:(SCXPromiseChainedRejectBlock)chainedReject;
+- (SCXPromise *) chainOnQueue:(dispatch_queue_t)queue
+chainedAsyncFulfill:(SCXPromiseWorkBlock)chainedFulfill
+           chainedAsyncReject:(SCXPromiseChainedRejectBlock)chainedReject;
 - (void)observOnQueue:(dispatch_queue_t)queue
 fullFill:(SCXPromiseOnFulfillBlock)onFullFill
                reject:(SCXPromiseOnRejectBlock)onReject;

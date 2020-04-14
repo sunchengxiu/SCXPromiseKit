@@ -195,6 +195,37 @@ typedef void (^SCXPromiseObserver)(SCXPromiseState state, id __nullable resoluti
     }];
     return promise;
 }
+- (SCXPromise *) chainOnQueue:(dispatch_queue_t)queue
+               chainedAsyncFulfill:(SCXPromiseWorkBlock)asyncFulfill
+                chainedAsyncReject:(SCXPromiseChainedRejectBlock)chainedReject{
+    SCXPromise *promise = [SCXPromise pendingPromise];
+    void (^resolve)(id value) = ^ (id __nullable value){
+        if ([value isKindOfClass:[SCXPromise class]]) {
+            [value observOnQueue:queue fullFill:^(id  _Nullable value) {
+                
+                [promise fulfill:value];
+            } reject:^(NSError * _Nonnull error) {
+                
+                [promise reject:error];
+            }];
+        } else {
+            [promise fulfill:value];
+        }
+    };
+    [self observOnQueue:queue fullFill:^(id  _Nullable value) {
+        if (asyncFulfill) {
+            asyncFulfill(value,^(id asyncValue){
+                resolve(asyncValue);
+            });
+        } else {
+            resolve(value);
+        }
+    } reject:^(NSError * _Nonnull error) {
+        id value = chainedReject ? chainedReject(error) : error;
+        resolve(value);
+    }];
+    return promise;
+}
 BOOL SCXWaitForPromisesWithTimeout(NSTimeInterval timeout) {
   BOOL isTimedOut = NO;
   NSDate *timeoutDate = [NSDate dateWithTimeIntervalSinceNow:timeout];

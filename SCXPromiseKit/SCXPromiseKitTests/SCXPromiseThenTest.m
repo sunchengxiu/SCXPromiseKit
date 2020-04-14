@@ -12,6 +12,7 @@
 #import "SCXPromise+Async.h"
 #import "SCXPromisePrivate.h"
 #import "SCXTestHelper.h"
+#import "SCXPromise+ThenAsync.h"
 @interface SCXPromiseThenTest : XCTestCase
 
 /**
@@ -28,6 +29,35 @@
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+}
+- (void)testThenAsync{
+    SCXPromise *p = [[[[SCXPromise async:^(SCXPromiseFulfillBlock  _Nonnull fulfill, SCXPromiseRejectBlock  _Nonnull reject) {
+        SCXDelay(1, ^{
+            fulfill(@(1));
+        });
+    }] asyncThen:^(id  _Nullable value, SCXPromiseAsyncThenFullFillBlock  _Nonnull fullFillBlock) {
+        NSLog(@"%@",value);
+        SCXDelay(2, ^{
+            fullFillBlock(@(2));
+        });
+    }] asyncThen:^(id  _Nullable value, SCXPromiseAsyncThenFullFillBlock  _Nonnull fullFillBlock) {
+        NSLog(@"%@",value);
+        SCXDelay(3, ^{
+            fullFillBlock(@(3));
+        });
+    }] asyncThen:^(id  _Nullable value, SCXPromiseAsyncThenFullFillBlock  _Nonnull fullFillBlock) {
+        NSLog(@"%@",value);
+        SCXDelay(4, ^{
+            SCXPromise *promise = [SCXPromise async:^(SCXPromiseFulfillBlock  _Nonnull fulfill, SCXPromiseRejectBlock  _Nonnull reject) {
+                SCXDelay(0.2, ^{
+                    fulfill(@(4));
+                });
+            }];
+            fullFillBlock(promise);
+        });
+    }] ;
+    SCXWaitForPromisesWithTimeout(1000000000000000);
+    XCTAssertEqual(p.value, @(4));
 }
 - (void)testAsyncThen{
     [[[[SCXPromise async:^(SCXPromiseFulfillBlock  _Nonnull fulfill, SCXPromiseRejectBlock  _Nonnull reject) {
