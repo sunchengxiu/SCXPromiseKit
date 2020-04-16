@@ -11,8 +11,8 @@
 #import "SCXPromise.h"
 #import "SCXPromisePrivate.h"
 
-NSErrorDomain const SCXPromiseErrorDomain = @"com.rongcloud.promise.Error";
 
+NSErrorDomain const SCXPromiseErrorDomain = @"com.rongcloud.promise.Error";
 @interface SCXPromiseKitTests : XCTestCase
 
 @end

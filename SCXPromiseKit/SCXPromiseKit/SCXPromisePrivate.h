@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SCXPromise.h"
 NS_ASSUME_NONNULL_BEGIN
+
 @interface SCXPromise<Value>()
 
 
