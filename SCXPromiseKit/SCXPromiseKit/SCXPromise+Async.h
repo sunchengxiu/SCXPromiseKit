@@ -6,8 +6,7 @@
 //  Copyright © 2020 RongCloud. All rights reserved.
 //
 
-#import <SCXPromiseKit/SCXPromiseKit.h>
-
+#import "SCXPromise.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SCXPromise<Value> (Async)

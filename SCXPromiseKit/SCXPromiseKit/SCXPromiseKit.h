@@ -17,3 +17,7 @@ FOUNDATION_EXPORT const unsigned char SCXPromiseKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SCXPromiseKit/PublicHeader.h>
 
 #import <SCXPromiseKit/SCXPromise.h>
+//#import <SCXPromiseKit/SCXPromise+ThenSync.h>
+//#import <SCXPromiseKit/SCXPromise+ThenAsync.h>
+//#import <SCXPromiseKit/SCXPromise+Catch.h>
+//#import <SCXPromiseKit/SCXPromise+Async.h>

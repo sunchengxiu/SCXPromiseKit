@@ -7,7 +7,6 @@
 //
 
 
-#import <SCXPromiseKit/SCXPromiseKit.h>
 #import "SCXPromise.h"
 NS_ASSUME_NONNULL_BEGIN
 
