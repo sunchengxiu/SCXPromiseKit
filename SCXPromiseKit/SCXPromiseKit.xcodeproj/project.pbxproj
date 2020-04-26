@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E805D33F2452F214001F6847 /* SCXPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = E805D33D2452F214001F6847 /* SCXPromise+All.h */; };
+		E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = E805D33E2452F214001F6847 /* SCXPromise+All.m */; };
 		E8297C9F2440784900CE2985 /* SCXTestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8297C9D2440784900CE2985 /* SCXTestHelper.h */; };
 		E8297CA4244081AF00CE2985 /* SCXPromise+ThenAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = E8297CA2244081AF00CE2985 /* SCXPromise+ThenAsync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8297CA5244081AF00CE2985 /* SCXPromise+ThenAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8297CA3244081AF00CE2985 /* SCXPromise+ThenAsync.m */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E805D33D2452F214001F6847 /* SCXPromise+All.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+All.h"; sourceTree = "<group>"; };
+		E805D33E2452F214001F6847 /* SCXPromise+All.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+All.m"; sourceTree = "<group>"; };
 		E8297C9D2440784900CE2985 /* SCXTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXTestHelper.h; sourceTree = "<group>"; };
 		E8297CA2244081AF00CE2985 /* SCXPromise+ThenAsync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+ThenAsync.h"; sourceTree = "<group>"; };
 		E8297CA3244081AF00CE2985 /* SCXPromise+ThenAsync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+ThenAsync.m"; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				E82E55D024485231000EE03C /* SCXPromise+Catch.m */,
 				E8774B1B2440221E009326B2 /* SCXPromise+Async.h */,
 				E8774B1C2440221E009326B2 /* SCXPromise+Async.m */,
+				E805D33D2452F214001F6847 /* SCXPromise+All.h */,
+				E805D33E2452F214001F6847 /* SCXPromise+All.m */,
 				E8297C9D2440784900CE2985 /* SCXTestHelper.h */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
@@ -150,6 +156,7 @@
 			files = (
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
 				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
+				E805D33F2452F214001F6847 /* SCXPromise+All.h in Headers */,
 				E8297CA4244081AF00CE2985 /* SCXPromise+ThenAsync.h in Headers */,
 				E82E55D124485231000EE03C /* SCXPromise+Catch.h in Headers */,
 				E8774B1D2440221E009326B2 /* SCXPromise+Async.h in Headers */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */,
 				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
 				E8774B1E2440221E009326B2 /* SCXPromise+Async.m in Sources */,
 				E8297CA5244081AF00CE2985 /* SCXPromise+ThenAsync.m in Sources */,
