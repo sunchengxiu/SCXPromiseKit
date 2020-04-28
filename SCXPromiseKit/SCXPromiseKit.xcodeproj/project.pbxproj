@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E805D33F2452F214001F6847 /* SCXPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = E805D33D2452F214001F6847 /* SCXPromise+All.h */; };
 		E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = E805D33E2452F214001F6847 /* SCXPromise+All.m */; };
+		E805D3482457C826001F6847 /* SCXPromiseAllTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E805D3472457C826001F6847 /* SCXPromiseAllTest.m */; };
+		E805D3492457CA0F001F6847 /* SCXPromise+All.h in Sources */ = {isa = PBXBuildFile; fileRef = E805D33D2452F214001F6847 /* SCXPromise+All.h */; };
+		E805D34A2457CA10001F6847 /* SCXPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = E805D33E2452F214001F6847 /* SCXPromise+All.m */; };
 		E8297C9F2440784900CE2985 /* SCXTestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8297C9D2440784900CE2985 /* SCXTestHelper.h */; };
 		E8297CA4244081AF00CE2985 /* SCXPromise+ThenAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = E8297CA2244081AF00CE2985 /* SCXPromise+ThenAsync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8297CA5244081AF00CE2985 /* SCXPromise+ThenAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8297CA3244081AF00CE2985 /* SCXPromise+ThenAsync.m */; };
@@ -54,6 +57,7 @@
 /* Begin PBXFileReference section */
 		E805D33D2452F214001F6847 /* SCXPromise+All.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+All.h"; sourceTree = "<group>"; };
 		E805D33E2452F214001F6847 /* SCXPromise+All.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+All.m"; sourceTree = "<group>"; };
+		E805D3472457C826001F6847 /* SCXPromiseAllTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseAllTest.m; sourceTree = "<group>"; };
 		E8297C9D2440784900CE2985 /* SCXTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCXTestHelper.h; sourceTree = "<group>"; };
 		E8297CA2244081AF00CE2985 /* SCXPromise+ThenAsync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+ThenAsync.h"; sourceTree = "<group>"; };
 		E8297CA3244081AF00CE2985 /* SCXPromise+ThenAsync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+ThenAsync.m"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				E84771AC243DD3C100374F2B /* SCXPromiseKitTests.m */,
 				E8774B1924402107009326B2 /* SCXPromiseThenTest.m */,
 				E82E55D52448588F000EE03C /* SCXPromiseCatchTest.m */,
+				E805D3472457C826001F6847 /* SCXPromiseAllTest.m */,
 				E84771AE243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKitTests;
@@ -284,8 +289,11 @@
 				E84C892F24485FEB008F8888 /* SCXPromise+Async.h in Sources */,
 				E84C893124485FED008F8888 /* SCXTestHelper.h in Sources */,
 				E84C892E24485FEA008F8888 /* SCXPromise+Catch.m in Sources */,
+				E805D3492457CA0F001F6847 /* SCXPromise+All.h in Sources */,
+				E805D34A2457CA10001F6847 /* SCXPromise+All.m in Sources */,
 				E84C892924485FE4008F8888 /* SCXPromise+ThenSync.h in Sources */,
 				E84C893024485FEC008F8888 /* SCXPromise+Async.m in Sources */,
+				E805D3482457C826001F6847 /* SCXPromiseAllTest.m in Sources */,
 				E84C892C24485FE8008F8888 /* SCXPromise+ThenAsync.m in Sources */,
 				E84C892A24485FE5008F8888 /* SCXPromise+ThenSync.m in Sources */,
 				E84C892624485FE0008F8888 /* SCXPromisePrivate.h in Sources */,
