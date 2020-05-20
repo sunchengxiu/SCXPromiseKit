@@ -70,6 +70,8 @@
 		E8A89C882475210E00A92284 /* SCXPromiseRaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C872475210D00A92284 /* SCXPromiseRaceTest.m */; };
 		E8A89C892475211200A92284 /* SCXPromise+Race.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8324751CF300A92284 /* SCXPromise+Race.h */; };
 		E8A89C8A2475211300A92284 /* SCXPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8424751CF300A92284 /* SCXPromise+Race.m */; };
+		E8A89C8D24752A1B00A92284 /* SCXPromise+Always.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A89C8B24752A1B00A92284 /* SCXPromise+Always.h */; };
+		E8A89C8E24752A1B00A92284 /* SCXPromise+Always.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8C24752A1B00A92284 /* SCXPromise+Always.m */; };
 		E8B9D57F24401C70009A52FF /* SCXPromise+ThenSync.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B9D58024401C70009A52FF /* SCXPromise+ThenSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */; };
 /* End PBXBuildFile section */
@@ -124,6 +126,8 @@
 		E8A89C8324751CF300A92284 /* SCXPromise+Race.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Race.h"; sourceTree = "<group>"; };
 		E8A89C8424751CF300A92284 /* SCXPromise+Race.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Race.m"; sourceTree = "<group>"; };
 		E8A89C872475210D00A92284 /* SCXPromiseRaceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseRaceTest.m; sourceTree = "<group>"; };
+		E8A89C8B24752A1B00A92284 /* SCXPromise+Always.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Always.h"; sourceTree = "<group>"; };
+		E8A89C8C24752A1B00A92284 /* SCXPromise+Always.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Always.m"; sourceTree = "<group>"; };
 		E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+ThenSync.h"; sourceTree = "<group>"; };
 		E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+ThenSync.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +198,8 @@
 				E8A89C7C2475143A00A92284 /* SCXPromise+Validate.m */,
 				E8A89C8324751CF300A92284 /* SCXPromise+Race.h */,
 				E8A89C8424751CF300A92284 /* SCXPromise+Race.m */,
+				E8A89C8B24752A1B00A92284 /* SCXPromise+Always.h */,
+				E8A89C8C24752A1B00A92284 /* SCXPromise+Always.m */,
 				E8297C9D2440784900CE2985 /* SCXTestHelper.h */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
@@ -227,6 +233,7 @@
 			files = (
 				E8A89C8524751CF300A92284 /* SCXPromise+Race.h in Headers */,
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
+				E8A89C8D24752A1B00A92284 /* SCXPromise+Always.h in Headers */,
 				E8A89C6D2474D60000A92284 /* SCXPromise+Timeout.h in Headers */,
 				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
 				E8A89C652473DB4500A92284 /* SCXPromise+Retry.h in Headers */,
@@ -340,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A89C8E24752A1B00A92284 /* SCXPromise+Always.m in Sources */,
 				E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */,
 				E805D34E2457D166001F6847 /* SCXPromise+Recover.m in Sources */,
 				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
