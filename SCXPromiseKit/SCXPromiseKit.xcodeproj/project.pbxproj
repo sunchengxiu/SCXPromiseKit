@@ -50,6 +50,16 @@
 		E8A89C682473EF9C00A92284 /* SCXPromiseRetryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C672473EF9C00A92284 /* SCXPromiseRetryTest.m */; };
 		E8A89C692473F17E00A92284 /* SCXPromise+Retry.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C632473DB4500A92284 /* SCXPromise+Retry.h */; };
 		E8A89C6A2473F18000A92284 /* SCXPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C642473DB4500A92284 /* SCXPromise+Retry.m */; };
+		E8A89C6D2474D60000A92284 /* SCXPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A89C6B2474D60000A92284 /* SCXPromise+Timeout.h */; };
+		E8A89C6E2474D60000A92284 /* SCXPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C6C2474D60000A92284 /* SCXPromise+Timeout.m */; };
+		E8A89C6F2474DA7900A92284 /* SCXPromise+Timeout.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C6B2474D60000A92284 /* SCXPromise+Timeout.h */; };
+		E8A89C702474DA7B00A92284 /* SCXPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C6C2474D60000A92284 /* SCXPromise+Timeout.m */; };
+		E8A89C722474DAFF00A92284 /* SCXPromiseTimeoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C712474DAFF00A92284 /* SCXPromiseTimeoutTest.m */; };
+		E8A89C752474DD2800A92284 /* SCXPromise+Await.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A89C732474DD2800A92284 /* SCXPromise+Await.h */; };
+		E8A89C762474DD2800A92284 /* SCXPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C742474DD2800A92284 /* SCXPromise+Await.m */; };
+		E8A89C78247507A300A92284 /* SCXPromiseAwitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C77247507A300A92284 /* SCXPromiseAwitTest.m */; };
+		E8A89C79247508F700A92284 /* SCXPromise+Await.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C732474DD2800A92284 /* SCXPromise+Await.h */; };
+		E8A89C7A247508F900A92284 /* SCXPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C742474DD2800A92284 /* SCXPromise+Await.m */; };
 		E8B9D57F24401C70009A52FF /* SCXPromise+ThenSync.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B9D58024401C70009A52FF /* SCXPromise+ThenSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */; };
 /* End PBXBuildFile section */
@@ -92,6 +102,12 @@
 		E8A89C632473DB4500A92284 /* SCXPromise+Retry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Retry.h"; sourceTree = "<group>"; };
 		E8A89C642473DB4500A92284 /* SCXPromise+Retry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Retry.m"; sourceTree = "<group>"; };
 		E8A89C672473EF9C00A92284 /* SCXPromiseRetryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseRetryTest.m; sourceTree = "<group>"; };
+		E8A89C6B2474D60000A92284 /* SCXPromise+Timeout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Timeout.h"; sourceTree = "<group>"; };
+		E8A89C6C2474D60000A92284 /* SCXPromise+Timeout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Timeout.m"; sourceTree = "<group>"; };
+		E8A89C712474DAFF00A92284 /* SCXPromiseTimeoutTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseTimeoutTest.m; sourceTree = "<group>"; };
+		E8A89C732474DD2800A92284 /* SCXPromise+Await.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Await.h"; sourceTree = "<group>"; };
+		E8A89C742474DD2800A92284 /* SCXPromise+Await.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Await.m"; sourceTree = "<group>"; };
+		E8A89C77247507A300A92284 /* SCXPromiseAwitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseAwitTest.m; sourceTree = "<group>"; };
 		E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+ThenSync.h"; sourceTree = "<group>"; };
 		E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+ThenSync.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +170,10 @@
 				E805D34C2457D166001F6847 /* SCXPromise+Recover.m */,
 				E8A89C632473DB4500A92284 /* SCXPromise+Retry.h */,
 				E8A89C642473DB4500A92284 /* SCXPromise+Retry.m */,
+				E8A89C6B2474D60000A92284 /* SCXPromise+Timeout.h */,
+				E8A89C6C2474D60000A92284 /* SCXPromise+Timeout.m */,
+				E8A89C732474DD2800A92284 /* SCXPromise+Await.h */,
+				E8A89C742474DD2800A92284 /* SCXPromise+Await.m */,
 				E8297C9D2440784900CE2985 /* SCXTestHelper.h */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
@@ -169,6 +189,8 @@
 				E805D3472457C826001F6847 /* SCXPromiseAllTest.m */,
 				E805D3522457D40E001F6847 /* SCXPromiseRecoverTest.m */,
 				E8A89C672473EF9C00A92284 /* SCXPromiseRetryTest.m */,
+				E8A89C712474DAFF00A92284 /* SCXPromiseTimeoutTest.m */,
+				E8A89C77247507A300A92284 /* SCXPromiseAwitTest.m */,
 				E84771AE243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKitTests;
@@ -182,8 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
+				E8A89C6D2474D60000A92284 /* SCXPromise+Timeout.h in Headers */,
 				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
 				E8A89C652473DB4500A92284 /* SCXPromise+Retry.h in Headers */,
+				E8A89C752474DD2800A92284 /* SCXPromise+Await.h in Headers */,
 				E805D33F2452F214001F6847 /* SCXPromise+All.h in Headers */,
 				E8297CA4244081AF00CE2985 /* SCXPromise+ThenAsync.h in Headers */,
 				E82E55D124485231000EE03C /* SCXPromise+Catch.h in Headers */,
@@ -295,8 +319,10 @@
 				E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */,
 				E805D34E2457D166001F6847 /* SCXPromise+Recover.m in Sources */,
 				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
+				E8A89C762474DD2800A92284 /* SCXPromise+Await.m in Sources */,
 				E8A89C662473DB4500A92284 /* SCXPromise+Retry.m in Sources */,
 				E8774B1E2440221E009326B2 /* SCXPromise+Async.m in Sources */,
+				E8A89C6E2474D60000A92284 /* SCXPromise+Timeout.m in Sources */,
 				E8297CA5244081AF00CE2985 /* SCXPromise+ThenAsync.m in Sources */,
 				E82E55D224485231000EE03C /* SCXPromise+Catch.m in Sources */,
 				E8B9D58024401C70009A52FF /* SCXPromise+ThenSync.m in Sources */,
@@ -318,15 +344,21 @@
 				E8A89C6A2473F18000A92284 /* SCXPromise+Retry.m in Sources */,
 				E805D3542457D438001F6847 /* SCXPromise+Recover.h in Sources */,
 				E8A89C692473F17E00A92284 /* SCXPromise+Retry.h in Sources */,
+				E8A89C79247508F700A92284 /* SCXPromise+Await.h in Sources */,
+				E8A89C7A247508F900A92284 /* SCXPromise+Await.m in Sources */,
 				E805D3492457CA0F001F6847 /* SCXPromise+All.h in Sources */,
+				E8A89C702474DA7B00A92284 /* SCXPromise+Timeout.m in Sources */,
+				E8A89C6F2474DA7900A92284 /* SCXPromise+Timeout.h in Sources */,
 				E8A89C682473EF9C00A92284 /* SCXPromiseRetryTest.m in Sources */,
 				E805D3552457D43A001F6847 /* SCXPromise+Recover.m in Sources */,
+				E8A89C78247507A300A92284 /* SCXPromiseAwitTest.m in Sources */,
 				E805D3532457D40E001F6847 /* SCXPromiseRecoverTest.m in Sources */,
 				E805D34A2457CA10001F6847 /* SCXPromise+All.m in Sources */,
 				E805D3482457C826001F6847 /* SCXPromiseAllTest.m in Sources */,
 				E84C892924485FE4008F8888 /* SCXPromise+ThenSync.h in Sources */,
 				E84C893024485FEC008F8888 /* SCXPromise+Async.m in Sources */,
 				E84C892C24485FE8008F8888 /* SCXPromise+ThenAsync.m in Sources */,
+				E8A89C722474DAFF00A92284 /* SCXPromiseTimeoutTest.m in Sources */,
 				E84C892A24485FE5008F8888 /* SCXPromise+ThenSync.m in Sources */,
 				E84C892624485FE0008F8888 /* SCXPromisePrivate.h in Sources */,
 				E84C892824485FE3008F8888 /* SCXPromise.m in Sources */,
