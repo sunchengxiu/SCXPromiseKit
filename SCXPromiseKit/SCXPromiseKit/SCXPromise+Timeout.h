@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCXPromise (Timeout)
+@interface SCXPromise<Value> (Timeout)
 - (SCXPromise *)timeout:(NSTimeInterval)interval;
 - (SCXPromise *)onQueue:(dispatch_queue_t)queue
                 timeout:(NSTimeInterval)interval;
