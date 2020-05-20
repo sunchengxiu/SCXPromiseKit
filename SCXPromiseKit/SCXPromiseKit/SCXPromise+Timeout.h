@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SCXPromise<Value> (Timeout)
+
+/// 超时没有产生结果
+/// @param interval 超时时间
 - (SCXPromise *)timeout:(NSTimeInterval)interval;
 - (SCXPromise *)onQueue:(dispatch_queue_t)queue
                 timeout:(NSTimeInterval)interval;

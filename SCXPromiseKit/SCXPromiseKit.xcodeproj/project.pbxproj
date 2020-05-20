@@ -65,6 +65,11 @@
 		E8A89C7F2475182400A92284 /* SCXPromise+Validate.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C7B2475143A00A92284 /* SCXPromise+Validate.h */; };
 		E8A89C802475182500A92284 /* SCXPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C7C2475143A00A92284 /* SCXPromise+Validate.m */; };
 		E8A89C822475183E00A92284 /* SCXPromiseValidateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C812475183E00A92284 /* SCXPromiseValidateTest.m */; };
+		E8A89C8524751CF300A92284 /* SCXPromise+Race.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A89C8324751CF300A92284 /* SCXPromise+Race.h */; };
+		E8A89C8624751CF300A92284 /* SCXPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8424751CF300A92284 /* SCXPromise+Race.m */; };
+		E8A89C882475210E00A92284 /* SCXPromiseRaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C872475210D00A92284 /* SCXPromiseRaceTest.m */; };
+		E8A89C892475211200A92284 /* SCXPromise+Race.h in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8324751CF300A92284 /* SCXPromise+Race.h */; };
+		E8A89C8A2475211300A92284 /* SCXPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A89C8424751CF300A92284 /* SCXPromise+Race.m */; };
 		E8B9D57F24401C70009A52FF /* SCXPromise+ThenSync.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B9D58024401C70009A52FF /* SCXPromise+ThenSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */; };
 /* End PBXBuildFile section */
@@ -116,6 +121,9 @@
 		E8A89C7B2475143A00A92284 /* SCXPromise+Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Validate.h"; sourceTree = "<group>"; };
 		E8A89C7C2475143A00A92284 /* SCXPromise+Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Validate.m"; sourceTree = "<group>"; };
 		E8A89C812475183E00A92284 /* SCXPromiseValidateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseValidateTest.m; sourceTree = "<group>"; };
+		E8A89C8324751CF300A92284 /* SCXPromise+Race.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+Race.h"; sourceTree = "<group>"; };
+		E8A89C8424751CF300A92284 /* SCXPromise+Race.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+Race.m"; sourceTree = "<group>"; };
+		E8A89C872475210D00A92284 /* SCXPromiseRaceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCXPromiseRaceTest.m; sourceTree = "<group>"; };
 		E8B9D57D24401C70009A52FF /* SCXPromise+ThenSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCXPromise+ThenSync.h"; sourceTree = "<group>"; };
 		E8B9D57E24401C70009A52FF /* SCXPromise+ThenSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCXPromise+ThenSync.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +192,8 @@
 				E8A89C742474DD2800A92284 /* SCXPromise+Await.m */,
 				E8A89C7B2475143A00A92284 /* SCXPromise+Validate.h */,
 				E8A89C7C2475143A00A92284 /* SCXPromise+Validate.m */,
+				E8A89C8324751CF300A92284 /* SCXPromise+Race.h */,
+				E8A89C8424751CF300A92284 /* SCXPromise+Race.m */,
 				E8297C9D2440784900CE2985 /* SCXTestHelper.h */,
 				E84771A2243DD3C100374F2B /* Info.plist */,
 			);
@@ -202,6 +212,7 @@
 				E8A89C712474DAFF00A92284 /* SCXPromiseTimeoutTest.m */,
 				E8A89C77247507A300A92284 /* SCXPromiseAwitTest.m */,
 				E8A89C812475183E00A92284 /* SCXPromiseValidateTest.m */,
+				E8A89C872475210D00A92284 /* SCXPromiseRaceTest.m */,
 				E84771AE243DD3C100374F2B /* Info.plist */,
 			);
 			path = SCXPromiseKitTests;
@@ -214,6 +225,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A89C8524751CF300A92284 /* SCXPromise+Race.h in Headers */,
 				E84771AF243DD3C100374F2B /* SCXPromiseKit.h in Headers */,
 				E8A89C6D2474D60000A92284 /* SCXPromise+Timeout.h in Headers */,
 				E84771BF243DD6BB00374F2B /* SCXPromise.h in Headers */,
@@ -331,6 +343,7 @@
 				E805D3402452F214001F6847 /* SCXPromise+All.m in Sources */,
 				E805D34E2457D166001F6847 /* SCXPromise+Recover.m in Sources */,
 				E84771C0243DD6BB00374F2B /* SCXPromise.m in Sources */,
+				E8A89C8624751CF300A92284 /* SCXPromise+Race.m in Sources */,
 				E8A89C762474DD2800A92284 /* SCXPromise+Await.m in Sources */,
 				E8A89C662473DB4500A92284 /* SCXPromise+Retry.m in Sources */,
 				E8774B1E2440221E009326B2 /* SCXPromise+Async.m in Sources */,
@@ -362,6 +375,9 @@
 				E8A89C7F2475182400A92284 /* SCXPromise+Validate.h in Sources */,
 				E8A89C802475182500A92284 /* SCXPromise+Validate.m in Sources */,
 				E805D3492457CA0F001F6847 /* SCXPromise+All.h in Sources */,
+				E8A89C892475211200A92284 /* SCXPromise+Race.h in Sources */,
+				E8A89C882475210E00A92284 /* SCXPromiseRaceTest.m in Sources */,
+				E8A89C8A2475211300A92284 /* SCXPromise+Race.m in Sources */,
 				E8A89C702474DA7B00A92284 /* SCXPromise+Timeout.m in Sources */,
 				E8A89C6F2474DA7900A92284 /* SCXPromise+Timeout.h in Sources */,
 				E8A89C682473EF9C00A92284 /* SCXPromiseRetryTest.m in Sources */,

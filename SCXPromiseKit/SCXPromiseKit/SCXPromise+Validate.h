@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef BOOL (^SCXPromiseValidateWorkBlock)(Value __nullable value);
 
-/// 检查是否合法
+/// 检查fullfill的值是否合法
 /// @param predicate 检查 block
 - (SCXPromise *)validate:(SCXPromiseValidateWorkBlock)predicate ;
 - (SCXPromise *)onQueue:(dispatch_queue_t)queue
