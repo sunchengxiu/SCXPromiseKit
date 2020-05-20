@@ -37,6 +37,41 @@ NSErrorDomain const SCXPromiseRetryErrorDomain = @"com.rongcloud.promise.Error";
     }] catch:^(NSError * _Nonnull error) {
         XCTFail(@"Promise should not be resolved with error.");
     }] ;
+    XCTAssert(SCXWaitForPromisesWithTimeout(15.0));
+}
+- (void)testAttempts{
+    NSError *retryError = [NSError errorWithDomain:SCXPromiseRetryErrorDomain code:42 userInfo:nil];
+    SCXPromise *promis = [[[SCXPromise attempts:3 retry:^id _Nullable{
+        NSLog(@"-------------");
+        return retryError;;
+    }] then:^id _Nullable(id  _Nullable value) {
+        XCTFail(@"Promise should not be resolved with error.");
+        return value;
+    }] catch:^(NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }] ;
+    XCTAssert(SCXWaitForPromisesWithTimeout(15.0));
+}
+
+- (void)testCustomDelay{
+    SCXPromise *promise = [SCXPromise attempts:3 delay:2 condition:nil retry:^id _Nullable{
+        NSError *retryError = [NSError errorWithDomain:SCXPromiseRetryErrorDomain code:42 userInfo:nil];
+        NSLog(@"------");
+        return retryError;;
+    }];
+     XCTAssert(SCXWaitForPromisesWithTimeout(15.0));
+}
+- (void)testCondition{
+    SCXPromise *promise = [SCXPromise attempts:3 delay:1 condition:^BOOL(NSInteger count, NSError * _Nonnull error ) {
+        NSLog(@"count : %d , error : %@",count,error);
+        return error.code == 42;
+    } retry:^id _Nullable{
+        NSError *retryError = [NSError errorWithDomain:SCXPromiseRetryErrorDomain code:42 userInfo:nil];
+        NSLog(@"------");
+        return retryError;;
+    }];
+    XCTAssert(SCXWaitForPromisesWithTimeout(15.0));
+
 }
 - (void)tearDown {
     
